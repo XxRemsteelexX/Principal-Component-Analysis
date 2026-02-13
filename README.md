@@ -25,14 +25,14 @@ The analysis uses a housing dataset with 7,000 property records containing compr
 ## Project Structure
 ```
 Principal-Component-Analysis/
-├── pca_analysis.ipynb              # Main PCA analysis notebook
-├── pca_analysis_extended.ipynb     # Extended analysis with additional methods
-├── housing_dataset.csv             # Complete housing dataset
-├── cleaned_dataset.csv             # Standardized dataset for analysis
-├── training_dataset.csv            # PCA-transformed training data
-├── test_dataset.csv                # PCA-transformed test data
-├── pca_env/                        # Virtual environment
-└── README.md                       # Project documentation
++-- pca_analysis.ipynb              # Main PCA analysis notebook
++-- pca_analysis_extended.ipynb     # Extended analysis with additional methods
++-- housing_dataset.csv             # Complete housing dataset
++-- cleaned_dataset.csv             # Standardized dataset for analysis
++-- training_dataset.csv            # PCA-transformed training data
++-- test_dataset.csv                # PCA-transformed test data
++-- pca_env/                        # Virtual environment
++-- README.md                       # Project documentation
 ```
 
 ## Methodology
@@ -71,16 +71,16 @@ Principal-Component-Analysis/
 ### Linear Regression with PCA Components
 
 #### Performance Metrics
-- **Training R²**: 0.554 (55.4% variance explained)
-- **Adjusted Training R²**: 0.554
-- **Test R²**: 0.508 (50.8% variance explained)
+- **Training R^2**: 0.554 (55.4% variance explained)
+- **Adjusted Training R^2**: 0.554
+- **Test R^2**: 0.508 (50.8% variance explained)
 - **Training RMSE**: $101,054
 - **Test RMSE**: $102,090
 
 #### Regression Equation
 ```
-Price = 308,142.77 + (78,641.91 × PC1) + (23,489.89 × PC2) + 
-        (16,635.44 × PC3) + (4,890.77 × PC4) + (7,855.54 × PC5)
+Price = 308,142.77 + (78,641.91 x PC1) + (23,489.89 x PC2) + 
+        (16,635.44 x PC3) + (4,890.77 x PC4) + (7,855.54 x PC5)
 ```
 
 #### Statistical Significance
@@ -107,7 +107,7 @@ All principal components show statistical significance (p < 0.001), indicating s
 - Effective handling of feature correlations
 
 ### Model Limitations
-- Moderate R² suggests room for improvement with additional features
+- Moderate R^2 suggests room for improvement with additional features
 - Linear relationship assumption may miss non-linear patterns
 - Limited to selected numerical features only
 
@@ -199,10 +199,10 @@ The component matrix reveals how original features contribute to each principal 
 ## Statistical Validation
 
 ### Assumptions Verified
-1. ✅ **Linear Relationships**: Reasonable linear associations observed
-2. ✅ **Feature Standardization**: All variables normalized for PCA
-3. ✅ **Component Orthogonality**: Principal components uncorrelated by design
-4. ✅ **Statistical Significance**: All components show p < 0.001
+1. - **Linear Relationships**: Reasonable linear associations observed
+2. - **Feature Standardization**: All variables normalized for PCA
+3. - **Component Orthogonality**: Principal components uncorrelated by design
+4. - **Statistical Significance**: All components show p < 0.001
 
 ### Model Diagnostics
 - **Residual Analysis**: Acceptable error distribution
